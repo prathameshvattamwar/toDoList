@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.main-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.child-div{
+    width: 350px;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.child-div img{
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.addItems input{
+    padding: 1vh 1.5vw;
+    height: 4.5vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 5px; 
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addItems input::placeholder{
+    font-size: .8rem;
+    color: rgb(4, 7, 35);
+}
+
+.addItems .add-btn{
+    font-size: 1.2rem;
+    color: #18162c;
+    transform: translateX(130px);
+    padding: 1.2vh;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transition: all .2s;
+    background-color: rgb(200, 200, 200);
+
+}
+
+.addItems .add-btn:hover{
+    background-color: rgb(86, 53, 221);
+    color: #fff;
+}
+
+.show-items{
+    margin-top: 3vh;
+}
+
+.delete-item, .edit-item{
+    padding: 1vh;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.delete-item:hover{
+    background-color: #fff;
+    /* color: #18162c; */
+    color: rgb(161, 0, 0);
+}
+
+.edit-item:hover{
+    background-color: #fff;
+    /* color: #18162c; */
+    color: rgb(22, 123, 22);
+}
+
+.show-items .each-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1.5vw;
+    height: 5vh;
+    width: 80%;
+    margin: 3vh auto 0 auto;
+    background-color: #fff;
+    color: rgb(21, 26, 67);
+    border-radius: 5px;
+    transition: all .2s;
+}
+
+.show-items .each-item:hover{
+    background-color: rgb(86, 53, 221);
+    color: #fff;
+    cursor: pointer;
+}
+
+.remove-btn{
+    padding: 1.5vh 2vw;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(86, 53, 221);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    transition: all .3s;
+}
+
+.remove-btn:hover{
+    box-shadow: 4px 4px 8px 5px #000;
+}
+
+/* ================ Responsive CSS =============== */
+
+@media (max-width:600px) {
+    .addItems .add-btn{
+        transform: translateX(120px);
+        padding: 1vh;
+    }
 }

@@ -2,6 +2,7 @@
   "name": "todo_list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prathameshvattamwar.github.io/todo_list",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
