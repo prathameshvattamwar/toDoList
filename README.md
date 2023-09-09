@@ -1,3 +1,4 @@
+
 <!-- <<<<<<< HEAD -->
 # Getting Started with Create React App
 
@@ -72,3 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # todo_list
 <!-- >>>>>>> 8e0861f9774c6822e8f7e416a5b0f2bc4fc694c2 -->
+<!-- =======
+# toDoList
+>>>>>>> 8466d986998db27b57ac03e6bd12e46bb6a362ac -->
